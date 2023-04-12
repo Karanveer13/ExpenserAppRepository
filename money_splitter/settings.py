@@ -119,6 +119,18 @@ WSGI_APPLICATION = 'money_splitter.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'splitter',
+#         'USER': 'Karanveer',
+#         'PASSWORD': '123456',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
+
 #postgres://ucinxdojytcwgj:c927b1a5132524831ace13f01f38f2c02142ca479d79cb0aeafb9ddf97fa6d5c@ec2-54-173-77-184.compute-1.amazonaws.com:5432/d6t8v3jin1pml
 #postgres://yihsatrfvblsab:bc6d6e22baf9e9ca7c67e95fc674e8b6f15e9cae2941fe834fc6d7bd4cef5870@ec2-54-158-247-210.compute-1.amazonaws.com:5432/d2ep16s0ic9h4d
 
@@ -186,7 +198,7 @@ STATICFILES_FINDERS = (
 
 
 
-import django_heroku
-django_heroku.settings(locals())
+# import django_heroku
+# django_heroku.settings(locals())
 
 API_LIMIT_PER_PAGE = 0
