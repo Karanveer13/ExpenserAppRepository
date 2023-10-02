@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "money_splitter/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "money_splitter/wsgi.py"
+      }
+    ]
+}
